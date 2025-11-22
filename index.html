@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private: Vann X Ryan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #protected-content {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var CORRECT_PASSWORD = "roblox"; 
+
+        function promptForPassword() {
+            var input = prompt("This page is private. Please enter the password to view the content:");
+
+            if (input === CORRECT_PASSWORD) {
+                document.getElementById('protected-content').style.display = 'block';
+                if (document.getElementById('entry-button')) {
+                    document.getElementById('entry-button').style.display = 'none';
+                }
+            } else {
+                alert("Incorrect password. Access Denied.");
+                window.location.replace("about:blank"); 
+            }
+        }
+    </script>
+
+    <button id="entry-button" onclick="promptForPassword()">Click to Enter</button>
+    
+    <script>
+    </script>
+    
+    <div id="protected-content" style="display: none;">
+        <h1>Vann X Ryan</h1>
+        <ol>
+            <li>The Anniversary Gift</li>
+            <li>The Willingness to Drive 8 Hrs</li>
+            <li>The Possessiveness
+                <ol>
+                    <li>When Ryan got mad because Vanessa ignored him.</li>
+                </ol>
+            </li>
+            <li>The Hesitant Love Admission</li>
+            <li>The Planned Date
+                <ol>
+                    <li>Vanessa's Disappointment when he didn't show.</li>
+                    <li>Ryan's disappointment when he missed it.</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    </body>
+</html>
