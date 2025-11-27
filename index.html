@@ -4,9 +4,9 @@
     <title>Private: Vann X Ryan</title>
     <style>
         body {
+            background-color: #FFAACC;
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #FFAACC;
         }
         #protected-content {
             border: 1px solid #ccc;
@@ -21,7 +21,7 @@
         var CORRECT_PASSWORD = "roblox"; 
 
         function promptForPassword() {
-            var input = prompt("This page is private. Please enter the password to view the content:");
+            var input = prompt("What's the password:");
 
             if (input === CORRECT_PASSWORD) {
                 document.getElementById('protected-content').style.display = 'block';
